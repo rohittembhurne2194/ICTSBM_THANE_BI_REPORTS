@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <FullPath>Debug</FullPath>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Thane_Committee_ICTSBM</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://202.65.157.254/ReportServer</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
+    <FullPath>DebugLocal</FullPath>
+    <OutputPath>bin\DebugLocal</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Appynity BI Reports</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <FullPath>Release</FullPath>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorLevel>2</ErrorLevel>
+    <OverwriteDatasets>False</OverwriteDatasets>
+    <OverwriteDataSources>False</OverwriteDataSources>
+    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <Platform>Win32</Platform>
+    <TargetReportFolder>Appynity BI Reports</TargetReportFolder>
+    <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+    <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
+    <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
+  </PropertyGroup>
+  <PropertyGroup>
+    <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+    <DataSources>@(DataSource)</DataSources>
+    <DataSets>@(DataSet)</DataSets>
+    <Reports>@(Report)</Reports>
+  </PropertyGroup>
+  <ItemGroup>
+    <Report Include="Areawise Garbage Collection.rdl" />
+    <Report Include="Areawise Garbage Type Collection.rdl" />
+    <Report Include="Citywise Garbage Report.rdl" />
+    <Report Include="Commercial Details.rdl" />
+    <Report Include="Commercial Ghar Sankalan Tapashil_New.rdl" />
+    <Report Include="Commercialwise Garbage Collection.rdl" />
+    <Report Include="CTPT_Details.rdl" />
+    <Report Include="Dashboard_1.rdl" />
+    <Report Include="Daywise Collection.rdl" />
+    <Report Include="Dumpyard_Employeeswise.rdl" />
+    <Report Include="Dumpyard_Summary.rdl" />
+    <Report Include="Employee Collection Summary.rdl" />
+    <Report Include="Employee Garbage Collection Count.rdl" />
+    <Report Include="Employee_Performance_Report.rdl" />
+    <Report Include="Garbase Collection Percentage.rdl" />
+    <Report Include="Ghar Sankalan Tapashil.rdl" />
+    <Report Include="Ghar Sankalan Tapashil_New.rdl" />
+    <Report Include="House Details.rdl" />
+    <Report Include="Housewise Garbage Collection.rdl" />
+    <Report Include="Liquid Areawise Garbage Collection.rdl" />
+    <Report Include="Liquid Areawise Garbage Type Collection.rdl" />
+    <Report Include="Liquid Citywise Garbage Report.rdl" />
+    <Report Include="Liquid Daywise Collection.rdl" />
+    <Report Include="Liquid Employee Collection Summary.rdl" />
+    <Report Include="Liquid Employee Garbage Collection Count.rdl" />
+    <Report Include="Liquid Employee_Performance_Report.rdl" />
+    <Report Include="Liquid Garbase Collection Percentage.rdl" />
+    <Report Include="Liquid Ghar Sankalan Tapashil.rdl" />
+    <Report Include="Liquid single Employee Collection.rdl" />
+    <Report Include="LiquidDashboard_1.rdl" />
+    <Report Include="single Employee Collection.rdl" />
+    <Report Include="Street Areawise Garbage Collection.rdl" />
+    <Report Include="Street Areawise Garbage Type Collection.rdl" />
+    <Report Include="Street Citywise Garbage Report.rdl" />
+    <Report Include="Street Daywise Collection.rdl" />
+    <Report Include="Street Employee Collection Summary.rdl" />
+    <Report Include="Street Employee Garbage Collection Count.rdl" />
+    <Report Include="Street Employee_Performance_Report.rdl" />
+    <Report Include="Street Garbase Collection Percentage.rdl" />
+    <Report Include="Street Ghar Sankalan Tapashil.rdl" />
+    <Report Include="Street single Employee Collection.rdl" />
+    <Report Include="StreetDashboard_1.rdl" />
+    <Report Include="SWM_Details.rdl" />
+    <Report Include="T20_1.1.rdl" />
+    <Report Include="T20_1.2.rdl" />
+    <Report Include="T20_1.3.rdl" />
+    <Report Include="T20_1.4.rdl" />
+    <Report Include="T20_1.5.rdl" />
+    <Report Include="T20_1.6.rdl" />
+    <Report Include="T20_1.7.rdl" />
+    <Report Include="T20_1.8.rdl" />
+    <Report Include="T20_1.9.rdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
+</Project>
