@@ -12,7 +12,7 @@
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>http://202.65.157.254/ReportServer</TargetServerURL>
+    <TargetServerURL>http://202.65.157.254:82/ReportServer</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -58,6 +58,7 @@
     <Report Include="CTPT_Details.rdl" />
     <Report Include="Dashboard_1.rdl" />
     <Report Include="Daywise Collection.rdl" />
+    <Report Include="DISIVisitingReport.rdl" />
     <Report Include="Dumpyard_Employeeswise.rdl" />
     <Report Include="Dumpyard_Summary.rdl" />
     <Report Include="Employee Collection Summary.rdl" />
