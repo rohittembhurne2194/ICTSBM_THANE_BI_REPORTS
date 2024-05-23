@@ -6,7 +6,7 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=114.143.244.134;Initial Catalog=LIVEAdvanceDevSwachhBharatThane</ConnectString>
+        <ConnectString>Data Source=103.241.147.9;Initial Catalog=LIVEAdvanceDevSwachhBharatThane</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>2bc5f730-6c88-42e0-9d32-8392574a6244</rd:DataSourceID>
@@ -508,7 +508,7 @@ and gc.userId in (isnull((@userid),gc.userid))</CommandText>
             <Top>23.22094mm</Top>
             <Left>12.20742mm</Left>
             <Height>21.17505mm</Height>
-            <Width>195.6502mm</Width>
+            <Width>195.65019mm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

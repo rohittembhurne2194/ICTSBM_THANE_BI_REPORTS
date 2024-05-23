@@ -6,7 +6,7 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=202.65.157.254;Initial Catalog=LIVEAdvanceDevSwachhBharatThane</ConnectString>
+        <ConnectString>Data Source=103.241.147.9;Initial Catalog=LIVEAdvanceDevSwachhBharatThane</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>d2b3a5e4-8389-4b95-a606-e9687a0d8d2a</rd:DataSourceID>
@@ -14,7 +14,7 @@
     <DataSource Name="Appconnection">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=202.65.157.254;Initial Catalog=LIVEAdvanceDevSwachhBharatMain</ConnectString>
+        <ConnectString>Data Source=103.241.147.9;Initial Catalog=LIVEAdvanceDevSwachhBharatMain</ConnectString>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>10eed1ac-d5a7-4294-8f4c-1756710224ec</rd:DataSourceID>
@@ -117,33 +117,6 @@ OPTION(RECOMPILE)</CommandText>
         </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="AppName">
-      <Query>
-        <DataSourceName>Appconnection</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="AppId">
-            <Value>=Parameters!AppId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandText>SELECT  [AppId]
-      ,[AppName]
-      ,[AppName_mar]      
-  FROM [LIVEAdvanceDevSwachhBharatMain].[dbo].[AppDetails]
-  where appid=@appid</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="AppId">
-          <Value>AppId</Value>
-        </Field>
-        <Field Name="AppName">
-          <Value>AppName</Value>
-        </Field>
-        <Field Name="AppName_mar">
-          <Value>AppName_mar</Value>
-        </Field>
-      </Fields>
-    </DataSet>
     <DataSet Name="UserDetails">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
@@ -157,6 +130,35 @@ from UserMaster where EmployeeType ='L'</CommandText>
         </Field>
         <Field Name="username">
           <DataField>username</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="AppName">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@appid">
+            <Value>=Parameters!appid.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT  [AppId]
+      ,[AppName]
+      ,[AppName_mar]      
+  FROM [LIVEAdvanceDevSwachhBharatMain].[dbo].[AppDetails]
+  where appid = @appid</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AppName">
+          <DataField>AppName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AppName_mar">
+          <DataField>AppName_mar</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -939,6 +941,10 @@ from UserMaster where EmployeeType ='L'</CommandText>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
+    <ReportParameter Name="appid">
+      <DataType>String</DataType>
+      <Prompt>appid</Prompt>
+    </ReportParameter>
     <ReportParameter Name="DBName">
       <DataType>String</DataType>
       <Prompt>DBName</Prompt>
@@ -1006,6 +1012,11 @@ from UserMaster where EmployeeType ='L'</CommandText>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>PId</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>appid</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
